@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--David Fariña Morena 2DAW-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <header><!-- cabecera con enlaces al formulario y al index-->
+            <div id="logo"> 
+                <a href="index.html"><!--enlace en la imagen-->
+                <img id="casa" src="img/logo.png"/>
+                </a>
+            </div>
+            <button id="enFormulario"><a href="formulario.html">Formulario</a></button><!--Boton con enlace al formulario-->
+        </header>
+        <main><!--Cuerpo donde se ubica el contenido-->
+            <div id="formulario"><!--div para el formulario-->
+                <h2>Formulario de Registro</h2>
+                <form><!--formulario para introducir los datos de una persona-->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required><br/><!--input tipo texto para introducir el nombre-->
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" required><br/><!--input tipo texto para introducir los apellidos-->
+
+                    <label for="genero">Género:</label>
+                    <select name="genero" required><!--un select con option para elegir el genero-->
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select><br/>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" required><br/><!--un input tipo number para introducir la edad-->
+
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date"name="fecha_nacimiento" required><br/><!--un input tipo date para introducir la edad-->
+
+                    <input type="submit" value="Enviar"><!--un input tipo submit para un boton de enviar-->
+                </form>
+            </div>
+        </main>
+    </form>
+</body>
+</html>
